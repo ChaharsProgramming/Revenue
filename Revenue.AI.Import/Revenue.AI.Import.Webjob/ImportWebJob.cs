@@ -1,16 +1,10 @@
 ﻿
-using Microsoft.Azure.ServiceBus;
 using Microsoft.Azure.ServiceBus.Core;
-using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Revenue.AI.Adapter;
-using Revenue.AI.Infrastructure;
-using Revenue.AI.Middleware.Common;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
+
 
 namespace Revenue.AI.Import.Webjob
 {
@@ -51,7 +45,7 @@ namespace Revenue.AI.Import.Webjob
 
         public void ProcessCheckAndBackup(IServiceCollection services, ServiceProvider provider)
         {
-            var test = new ImportProcessor();
+            //todo call ImportProcessor.Process()
         }
     }
 }
